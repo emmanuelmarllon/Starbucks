@@ -1,0 +1,31 @@
+section.products-section {
+  background-image: url();
+  background-color: aliceblue;
+}
+.products-section h2 {
+  text-align: end;
+  padding: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ver-todos {
+  margin: 2rem auto;
+  display: block;
+  padding: 0.75rem 2rem;
+  background-color: #00b34d;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ver-todos:hover {
+  background-color: #007c38;
+  transform: scale(1.05);
+}
+a {
+  text-decoration: none;
+}

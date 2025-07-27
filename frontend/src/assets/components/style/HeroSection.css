@@ -1,0 +1,82 @@
+.hero-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 1rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #017143;
+}
+
+.hero-section .hero-logo {
+  height: 80px;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-section .hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .hero-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #004225;
+}
+
+.hero-section .hero-main-img {
+  max-height: 350px;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(135deg, #004225, #007c38);
+  padding: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+.hero-thumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  overflow: visible; /* Isso aqui deixa o thumb crescer além do container */
+  padding: 1rem 0;
+}
+.hero-thumb {
+  width: 80px;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.hero-thumb {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-thumb:hover {
+  transform: scale(1.1);
+}
+.hero-thumb {
+  transform: translateY(30px);
+  opacity: 0;
+  transition: transform 0.3s ease;
+}
+
+.hero-thumb:hover {
+  transform: translate(0px, -30px) scale(1.1) !important;
+}

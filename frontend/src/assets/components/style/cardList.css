@@ -1,0 +1,119 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 2rem 1.5rem 1rem;
+  width: 400px;
+  min-height: 340px;
+  color: #000;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #00b34d, #007c38);
+  color: #fff;
+  min-height: 400px;
+  max-height: max-content;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Imagem AGORA faz parte do fluxo normal */
+.card img {
+  height: 120px;
+  object-fit: contain;
+  margin-top: -60px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+}
+
+.card:hover img {
+  transform: scale(1.08) rotate(1deg);
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.card p:last-of-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.card button {
+  padding: 0.6rem 1.5rem;
+  background-color: #fff;
+  color: #00b34d;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.card button:hover {
+  background-color: #f0fdf6;
+  color: #008138;
+  transform: translateY(-2px);
+}
+/* Esconde tudo dentro do bloco info-extra */
+.info-extra {
+  opacity: 0;
+  max-height: 0;
+  width: 100%;
+  padding: 10px;
+  transform: scaleY(0.95);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card:hover .info-extra {
+  opacity: 1;
+  max-height: 1000px;
+
+  transform: scaleY(1);
+}
+
+#info {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+#info td {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 100;
+}
+#info td:first-child {
+  width: 50%;
+  text-align: left;
+}
+
+#info td:last-child {
+  width: 50%;
+  text-align: right; /* joga pro lado certo */
+}
