@@ -109,7 +109,7 @@ function ProductsSection({ cart, addToCart }) {
 
   // Carrega todos os produtos do JSON local (pode ajustar o caminho)
   useEffect(() => {
-    fetch("http://localhost:3001/produtos")
+    fetch("https://starbucks-zr6n.onrender.com/produtos")
       .then((res) => res.json())
       .then((data) => {
         const produtosComImagem = data.map((item) => ({

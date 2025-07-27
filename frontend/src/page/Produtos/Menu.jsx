@@ -9,7 +9,7 @@ const Menu = ({ cart = [], setCart, addToCart }) => {
 
   // Carrega os produtos
   useEffect(() => {
-    fetch("http://localhost:3001/produtos")
+    fetch("https://starbucks-zr6n.onrender.com/produtos")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
