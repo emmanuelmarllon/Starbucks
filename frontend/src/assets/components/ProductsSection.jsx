@@ -137,7 +137,7 @@ function ProductsSection({ cart, addToCart }) {
       return;
     }
 
-    const climaTag = temperatura < 20 ? "frio" : "calor";
+    const climaTag = temperatura < 25 ? "frio" : "calor";
 
     let turnoTag = "";
     if (hora >= 0 && hora < 6) turnoTag = "madrugada";
